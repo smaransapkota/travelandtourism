@@ -213,7 +213,6 @@ body {
     right: 3rem;
     font-size: 5rem;
     cursor: pointer;
-    color:white;
 }
 
 #menu-bar {
@@ -267,6 +266,7 @@ body {
     }
 
     header .navbar.active {
+<<<<<<< HEAD
         height: 75vh;
         padding: 1rem 2rem;
     }
@@ -287,3 +287,25 @@ body {
 
     }
 }
+=======
+        height: 50vh;
+        padding: 1rem 2rem;
+    }
+
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+
+    @media (max-width:450px) {
+
+        html {
+            font-size: 50%;
+        }
+
+    }
+}
+>>>>>>> e5ade656fe52461897ccd524877768ab6a8bd11c
