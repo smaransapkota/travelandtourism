@@ -212,6 +212,7 @@ body{
     right: 3rem;
     font-size: 5rem;
     cursor: pointer;
+    color:white;
 }
 
 #menu-bar{
@@ -278,7 +279,7 @@ body{
 @media (max-width:450px) {
     
     html{
-        font-size: 50px;
+        font-size: 50%;
     }
     
 }
