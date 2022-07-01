@@ -6,14 +6,37 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
+let formLogin = document.querySelector('.formlogin');
+let loginActive = document.querySelector('.login-form-container');
+// const menuBar = document.querySelector('#menu-bar');
+// let navLinks = document.querySelectorAll('.navbar__link');
 
-window.onscroll = () =>{
+// window.onscroll = () =>{
+//     searchBtn.classList.remove('fa-times');
+//     searchBar.classList.remove('active');
+//     menu.classList.remove('fa-times');
+//     navbar.classList.remove('active');
+//     loginForm.classList.remove('active');
+// }
+// navLinks.forEach((el) => {
+//   el.addEventListener('click', () => {
+
+//   })
+// })
+
+loginActive.addEventListener('click', () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
-}
+});
+
+formLogin.addEventListener('click', (e) =>{
+  e.stopPropagation();
+});
+
+
 
 menu.addEventListener('click', () =>{
     menu.classList.toggle('fa-times');
@@ -42,45 +65,45 @@ videoBtn.forEach(btn =>{
     });
 });
 
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        640: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-    },
-});
+// var swiper = new Swiper(".review-slider", {
+//     spaceBetween: 20,
+//     loop:true,
+//     autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//     },
+//     breakpoints: {
+//         640: {
+//           slidesPerView: 1,
+//         },
+//         768: {
+//           slidesPerView: 2,
+//         },
+//         1024: {
+//           slidesPerView: 3,
+//         },
+//     },
+// });
 
-var swiper = new Swiper(".brand-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        450: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        991: {
-          slidesPerView: 4,
-        },
-        1200: {
-          slidesPerView: 5,
-        },
-      },
-});
+// var swiper = new Swiper(".brand-slider", {
+//     spaceBetween: 20,
+//     loop:true,
+//     autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//     },
+//     breakpoints: {
+//         450: {
+//           slidesPerView: 2,
+//         },
+//         768: {
+//           slidesPerView: 3,
+//         },
+//         991: {
+//           slidesPerView: 4,
+//         },
+//         1200: {
+//           slidesPerView: 5,
+//         },
+//       },
+// });

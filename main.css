@@ -213,6 +213,7 @@ body {
     right: 3rem;
     font-size: 5rem;
     cursor: pointer;
+    color:white;
 }
 
 #menu-bar {
@@ -266,7 +267,11 @@ body {
     }
 
     header .navbar.active {
+<<<<<<< HEAD
         height: 50vh;
+=======
+        height: 75vh;
+>>>>>>> 41a6994b621e2936066fc20747ac92848c11f46d
         padding: 1rem 2rem;
     }
 
